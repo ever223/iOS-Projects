@@ -226,17 +226,17 @@
 // 记忆数值清除
 - (void) memClear {
     memeryNumber = 0;
-    NSLog(@"memeryNumber = %g",memeryNumber);
+    NSLog(@"MC: 记忆的数 = %g",memeryNumber);
 }
 // 将记忆数值和当前屏幕上的数值相加
 - (void) memAdd:(double) number {
     memeryNumber = memeryNumber + number;
-    NSLog(@"memeryNumber = %g",memeryNumber);
+    NSLog(@"M+: 记忆的数 = %g",memeryNumber);
 }
 // 将记忆数值和当前屏幕上的数值相减
 - (void) memSub:(double)memNum {
     memeryNumber = memeryNumber - memNum;
-    NSLog(@"memeryNumber = %g",memeryNumber);
+    NSLog(@"M-: 记忆的数 = %g",memeryNumber);
 }
 
 //清除所有数据

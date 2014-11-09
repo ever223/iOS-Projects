@@ -107,6 +107,7 @@ typedef enum {
         [self.Main memSub:self.display.text.doubleValue];
     } else if([@"MR" isEqualToString:mTitle]) {     //MR是读取储存的数据,并显示在屏幕上
         [self.display setText:[NSString stringWithFormat:@"%g", self.Main.memeryNumber]];
+        NSLog(@"MR: 记忆的数 = %g",self.Main.memeryNumber);
         isAnswered = YES;
         
     } else if([@"⌫" isEqualToString:mTitle]) {      //删除屏幕上的最后一个数字或者操作符

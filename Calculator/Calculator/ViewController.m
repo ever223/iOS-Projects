@@ -101,6 +101,7 @@ typedef enum {
         isTypeNumber = YES;
     }
 }
+
 //当MC M+ M- MR ⌫ AC被按下时，调用
 - (IBAction)mPressed:(UIButton *)sender {
     NSString *mTitle = [sender currentTitle];
@@ -177,4 +178,5 @@ typedef enum {
     [self.display setText:resultText];
     NSLog(@"%@%@", displayText, resultText);
 }
+
 @end

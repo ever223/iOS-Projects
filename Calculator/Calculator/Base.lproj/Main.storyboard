@@ -107,6 +107,9 @@
                                 <state key="normal" title="％">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="percentagePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wqu-OD-ola"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06Q-gQ-O7X">
                                 <rect key="frame" x="-1" y="264" width="80" height="60"/>
@@ -212,6 +215,9 @@
                                 <state key="normal" title="±">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="percentagePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H6V-dq-HqP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITv-cW-hGa">
                                 <rect key="frame" x="-1" y="447" width="80" height="60"/>

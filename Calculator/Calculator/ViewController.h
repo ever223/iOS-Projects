@@ -21,6 +21,7 @@
 - (IBAction)mPressed:(UIButton *)sender;        //MC M+ M- MR ⌫ AC
 - (IBAction)operationPressed:(UIButton *)sender;//( ) % ÷ × - + ±
 - (IBAction)enterPressed:(UIButton *)sender;
+- (IBAction)percentagePressed:(UIButton *)sender;
 
 
 

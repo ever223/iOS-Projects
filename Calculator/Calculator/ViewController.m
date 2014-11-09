@@ -39,7 +39,6 @@ typedef enum {
 - (void) initTextValue {
     [self.display setText:@"0"];
     [self.currentNumber setText:@""];
-    isTypeNumber = NO;
     isAnswered = NO;
     [self.Main clearAll];
 }
@@ -62,43 +61,38 @@ typedef enum {
 //按下：0 1 2 3 4 5 6 7 8 9 . 键时
 - (IBAction)digitPressed:(UIButton *)sender {
     NSString *digit = [sender currentTitle];
-    
+
     if ([self lastDisplayTextType] == isRightBracket) { //若display显示的最后一个字符是")"，则不处理
         return;
     }
-    
     if (isAnswered) {
-        [self.currentNumber setText:@""];
-        isAnswered = NO;
+        [self initTextValue];
     }
-    
+    if ([self lastDisplayTextType] == isOperation || [self lastDisplayTextType] == isLeftBracket) {
+        [self.currentNumber setText:@""];
+    }
+
     if ([@"0" isEqual:self.currentNumber.text] && [@"0" isEqual:digit]) { //防止出现0000的数值
         isTypeNumber = NO;
         return;
     }
-    
-    if(isTypeNumber) {
-        if (![@"." isEqual:digit] || ([@"." isEqual:digit] && [self.currentNumber.text rangeOfString:@"."].location == NSNotFound)) {
-            [self appendDisplayText:digit];
-            [self appendCurrentNumber:digit];
-        }
-    }
-    else {
-        if ([@"." isEqualToString:digit]) {
-            if ([self.currentNumber.text isEqualToString:@""]) {
-                [self appendDisplayText:@"0"];                      //第一个输入的字符是. ,则自动补成"0."格式
-            }
-            [self appendDisplayText:digit];
-            [self appendCurrentNumber:digit];
-        } else {
-            if ([self.display.text isEqualToString:@"0"]) {
-                [self.display setText:digit];                       //若输入第一个数非0非.，则去掉第一个0
-            } else {
-                [self appendDisplayText:digit];
-            }
+    if (![@"." isEqual:digit]) {
+        if ([self.display.text isEqualToString:@"0"]) {
+            [self.display setText:digit];
             [self.currentNumber setText:digit];
+            return;
         }
-        isTypeNumber = YES;
+        [self appendDisplayText:digit];
+        [self appendCurrentNumber:digit];
+    } else if([@"." isEqual:digit]) {
+        if ([self.currentNumber.text rangeOfString:@"."].location != NSNotFound) {
+            return;
+        }
+        if ([self.display.text isEqualToString:@"0"]) {//第一个输入的字符是. ,则自动补成"0."格式
+            [self.currentNumber setText:@"0"];
+        }
+        [self appendDisplayText:digit];
+        [self appendCurrentNumber:digit];
     }
 }
 
@@ -120,6 +114,12 @@ typedef enum {
             [self initTextValue];
         } else {
             NSInteger length = [self.display.text length];
+            if ([self lastDisplayTextType] == isLeftBracket) {
+                [self.Main subBrackCount];
+            }
+            if ([self lastDisplayTextType] == isRightBracket) {
+                [self.Main addBracketCount];
+            }
             NSString *displayText = [self.display.text substringToIndex: (length - 1)];
             [self.display setText:displayText];
         }
@@ -136,37 +136,42 @@ typedef enum {
         [self.currentNumber setText:self.display.text];
         isAnswered = NO;
     }
+    
     if ([@"(" isEqualToString:op]) {
-        if (!isTypeNumber) { //若前面输入的是数值，则不处理
+        if ([self lastDisplayTextType] == isNumber || [self lastDisplayTextType] == isRightBracket) { //若前面输入的是数值和“）”，则不处理
             if ([self.display.text isEqualToString:@"0"]) {
                 [self.display setText:op];
-            } else {
-                [self appendDisplayText:op];
+                [self.currentNumber setText:@""];
+                [self.Main addBracketCount];
             }
-            [self.Main addBracketCount];
-        }
-    } else if ([@")" isEqualToString:op] ) {
-        if (self.Main.bracketCount > 0)  {              //若已输入的左括号和右括号抵消后为0，则不处理
-            if (isTypeNumber) {
-                [self appendDisplayText:op];
-                [self.Main subBrackCount];
-                isTypeNumber = YES;                     //")"后面不能接"("
-            }
-        }
-    } else {
-        if ([self lastDisplayTextType] == isLeftBracket) {  //如果display最后一个字符为左括号，则不处理
             return;
-        }
-        if (isTypeNumber) {                             //当 % ÷ × - + ±按下时
-            isTypeNumber = NO;                          //当前不是在输入数值
+        } else {
             [self appendDisplayText:op];
             [self.currentNumber setText:@""];
+            [self.Main addBracketCount];
         }
+    } else if ([@")" isEqualToString:op]) {
+        //若已输入的左括号和右括号抵消后为0，则不处理
+        if (self.Main.bracketCount <= 0) {
+            return;
+        }
+        if ([self lastDisplayTextType] == isNumber || [self lastDisplayTextType] == isRightBracket)  {
+            [self appendDisplayText:op];
+            [self.currentNumber setText:@""];
+            [self.Main subBrackCount];
+        }
+    } else {//如果display最后一个字符为左括号，则不处理
+        if ([self lastDisplayTextType] == isLeftBracket || [self lastDisplayTextType] == isOperation) {
+            return;
+        }
+        [self appendDisplayText:op];
+        [self.currentNumber setText:@""];
     }
 }
 
 - (IBAction)enterPressed:(UIButton *)sender {
-    if (isTypeNumber) {             //如果按下“＝”键前，正在输入数值或者“）”，则调用
+    //如果按下“＝”键前，正在输入数值或者“）”，则调用
+    if ([self lastDisplayTextType] == isNumber || ([self lastDisplayTextType] == isRightBracket && self.Main.bracketCount == 0)) {
         isAnswered = YES;
     } else {
         return;
@@ -176,7 +181,16 @@ typedef enum {
     [self.Main answerOperation: self.display.text];     //计算
     NSString *resultText =[NSString stringWithFormat:@"%2.15g", self.Main.result];
     [self.display setText:resultText];
-    NSLog(@"%@%@", displayText, resultText);
+    NSLog(@"运算表达式: %@%@", displayText, resultText);
+}
+
+- (IBAction)percentagePressed:(UIButton *)sender {
+    NSString *op = [sender currentTitle];
+    if ([@"％" isEqualToString:op]) {
+        
+    } else if([@"±" isEqualToString:op]) {
+        
+    }
 }
 
 @end

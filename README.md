@@ -54,7 +54,9 @@
 4. M功能测试&nbsp;
 
 </p>
-![image](https://github.com/ever223/iOS-Projects/blob/master/Calculator/pictrues/UI.png）
+<p>
+    ![image](https://github.com/ever223/iOS-Projects/blob/master/Calculator/pictrues/UI.png）
+</p>
 <p class="p3">
 <span style="white-space:pre">	<span style="color: rgb(51, 51, 51); font-family: arial; font-size: 13px; line-height: 20.0200004577637px; white-space: pre;">![image](<a href="https://github.com/ever223/iOS-Projects/blob/master/Calculator/pictrues/UI.png"><span class="s4">https://github.com/ever223/iOS-Projects/blob/master/Calculator/pictrues/m.png</span></a>)	</span></span>
 </p>

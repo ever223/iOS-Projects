@@ -3,8 +3,10 @@
 <span class="s1">1. UI</span><span class="s2">设计：</span>
 </p>
 <p class="p1">
+
 <span class="s3"><span style="white-space:pre">	</span>![image](<a href="https://github.com/ever223/iOS-Projects/blob/master/Calculator/pictrues/UI.png"><span class="s4">https://github.com/ever223/iOS-Projects/blob/master/Calculator/pictrues/UI.png</span></a>)</span>
 </p>
+
 <p class="p3">
 <span class="s5">2.&nbsp;</span><span class="s1">控制输入格式：</span>
 </p>

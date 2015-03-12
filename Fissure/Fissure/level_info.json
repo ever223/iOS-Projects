@@ -1,0 +1,1589 @@
+{
+	
+	"level_order" : [
+					 "intro-1",
+					 "intro-2",
+					 "intro-3",
+					 "intro-4",
+					 "intro-5",
+					 "intro-6",
+					 "intro-bounce-example",
+					 "color-first-example",
+					 "color-second-example",
+					 "color-split-example",
+					 
+					 "color-bend-reverse",
+					 "gravity-intro",
+					 "gravity-push",
+					 "gravity-double-push",
+					 "gravity-push-hard",
+					 "speed-intro",
+					 "speed-gravity",
+					 "speed-test",
+					 "speed-gravity-push",
+					 "speed-gravity-2-push",
+					 
+					 "speed-gravity-push-2",
+					 "repel-intro",
+					 "repel-warp-intro",
+					 "warp-cross",
+					 "warp-cross-2",
+					 "shape-intro",
+					 "shape-warp",
+					 "shape-warp-2",
+					 "double-spawn-intro",
+					 "double-spawn-2",
+					 
+					 "shape-warp-3",
+					 "journey-1",
+					 "warp-trick-1",
+					 "warp-cross-3",
+					 "shape-journey-1",
+					 "warp-nonsense",
+					 
+	],
+	
+	"levels" : {
+		
+		"test1" : {
+			
+			"spawns" : [ {
+						"px" : 0.25,
+						"py" : 0.25,
+						"jx" : 0.005,
+						"jy" : 0.008,
+						"angle" : 0.5,
+						"speed" : 0.5,
+						"friction" : 0.2,
+						"frameInterval" : 3
+				}
+			],
+			
+			"controls" : [ {
+						  "type" : "push",
+						  "power" : 1.15,
+						  "angle" : 3.1457079632,
+						  "canRotate" : false,
+						  "px" : 0.75,
+						  "py" : 0.75,
+						  "radius"  : 0.075,
+						  "minRadiusScale" : 1,
+						  "maxRadiusScale" : 3,
+						  "canScale" : true,
+						  "canMove" : true
+						  },
+						  {
+						  "type" : "propel",
+						  "power" : 1.5,
+						  "angle" : 1.57079632,
+						  "canRotate" : false,
+						  "px" : 0.55,
+						  "py" : 0.75,
+						  "radius"  : 0.075,
+						  "minRadiusScale" : 1,
+						  "maxRadiusScale" : 3,
+						  "canScale" : true,
+						  "canMove" : true
+						  
+						  },
+						  {
+						  "type" : "gravity",
+						  "power" : 1.0,
+						  "angle" : -1.57079632,
+						  "canRotate" : false,
+						  "px" : 0.55,
+						  "py" : 0.55,
+						  "radius"  : 0.075,
+						  "minRadiusScale" : 1,
+						  "maxRadiusScale" : 3,
+						  "canScale" : true,
+						  "canMove" : true
+						  },
+						  {
+						  "type" : "repel",
+						  "power" : 0.5,
+						  "angle" : -1.57079632,
+						  "canRotate" : false,
+						  "px" : 0.85,
+						  "py" : 0.85,
+						  "radius"  : 0.075,
+						  "minRadiusScale" : 1,
+						  "maxRadiusScale" : 3,
+						  "canScale" : true,
+						  "canMove" : true
+						  },
+						  {
+						  "type" : "warp",
+						  "power" : 1.5,
+						  "angle" : -1.57079632,
+						  "canRotate" : false,
+						  "px" : 0.15,
+						  "py" : 0.15,
+						  "radius"  : 0.02,
+						  "minRadiusScale" : 1,
+						  "maxRadiusScale" : 3,
+						  "canScale" : true,
+						  "canMove" : true
+						  },
+						  {
+						  "type" : "warp",
+						  "power" : 1.5,
+						  "angle" : -1.57079632,
+						  "canRotate" : false,
+						  "px" : 0.45,
+						  "py" : 0.15,
+						  "radius"  : 0.02,
+						  "minRadiusScale" : 1,
+						  "maxRadiusScale" : 3,
+						  "canScale" : true,
+						  "canMove" : true
+						  },
+						  {
+						  "type" : "shape",
+						  "power" : 1.5,
+						  "angle" : -1.57079632,
+						  "canRotate" : false,
+						  "px" : 0.65,
+						  "py" : 0.15,
+						  "radius"  : 0.04,
+						  "minRadiusScale" : 1,
+						  "maxRadiusScale" : 3,
+						  "canScale" : false,
+						  "canMove" : true
+						  }
+
+						  
+
+			],
+			
+			"targets" : [ {
+						 "px" : 0.15,
+						 "py" : 0.85,
+						 "matchedFissure" : 1
+						 },
+						 {
+						 "px" : 0.25,
+						 "py" : 0.35,
+						 "matchedFissure" : 0
+						 },
+						 {
+						 "px" : 0.75,
+						 "py" : 0.55,
+						 "matchedFissure" : 0
+						 }
+			],
+			
+			"fissures" : [ {
+						  "px" : 0.35,
+						  "py" : 0.70,
+						  "color" : { "r" : 1, "g" : 0.4, "b" : 0, "a" : 1 },
+						  "radius" : 0.025
+						  }
+			]
+		},
+		
+		"test2" : {
+			
+			"spawns" : [ {
+						"px" : 0.25,
+						"py" : 0.25,
+						"jx" : 0.001,
+						"jy" : 0.002,
+						"angle" : 0.5,
+						"speed" : 0.5,
+						"friction" : 0.2,
+						"frameInterval" : 3
+						}
+						],
+			
+			"controls" : [ {
+						  "type" : "push",
+						  "power" : 1.15,
+						  "angle" : 3.1457079632,
+						  "canRotate" : false,
+						  "px" : 0,
+						  "py" : 0,
+						  "radius"  : 0.075,
+						  "minRadiusScale" : 1,
+						  "maxRadiusScale" : 3,
+						  "canScale" : true,
+						  "canMove" : true
+						  },
+						  {
+						  "type" : "push",
+						  "power" : 1.15,
+						  "angle" : 3.1457079632,
+						  "canRotate" : false,
+						  "px" : 1,
+						  "py" : 0,
+						  "radius"  : 0.075,
+						  "minRadiusScale" : 1,
+						  "maxRadiusScale" : 3,
+						  "canScale" : true,
+						  "canMove" : true
+						  },
+						  {
+						  "type" : "push",
+						  "power" : 1.15,
+						  "angle" : 3.1457079632,
+						  "canRotate" : false,
+						  "px" : 0,
+						  "py" : 1,
+						  "radius"  : 0.075,
+						  "minRadiusScale" : 1,
+						  "maxRadiusScale" : 3,
+						  "canScale" : true,
+						  "canMove" : true
+						  },
+						  {
+						  "type" : "push",
+						  "power" : 1.15,
+						  "angle" : 3.1457079632,
+						  "canRotate" : false,
+						  "px" : 1,
+						  "py" : 1,
+						  "radius"  : 0.075,
+						  "minRadiusScale" : 1,
+						  "maxRadiusScale" : 3,
+						  "canScale" : true,
+						  "canMove" : true
+						  }
+						  
+						  
+						  ],
+			
+			"targets" : [ {
+						 "px" : 0.15,
+						 "py" : 0.85,
+						 "matchedFissure" : 1
+						 }
+						 ],
+			
+			"fissures" : [ {
+						  "px" : 0.35,
+						  "py" : 0.70,
+						  "color" : { "r" : 1, "g" : 0.4, "b" : 0, "a" : 1 },
+						  "radius" : 0.025
+						  }
+						  ]
+		},
+		
+		"intro-1" : {
+			
+			"spawns" : [ {
+						"px" : 0.1,
+						"py" : 0.2,
+						"jx" : 0.005,
+						"jy" : 0.008,
+						"angle" : 0.0,
+						"speed" : 0.5,
+						"friction" : 0.2,
+						"frameInterval" : 3
+						}
+						],
+			
+			"controls" : [ {
+						  "type" : "push",
+						  "power" : 1.15,
+						  "angle" : 1.57,
+						  "canRotate" : false,
+						  "px" : 0.25,
+						  "py" : 0.65,
+						  "radius"  : 0.075,
+						  "minRadiusScale" : 1,
+						  "maxRadiusScale" : 3,
+						  "canScale" : false,
+						  "canMove" : true
+						  }
+						  
+						  
+						  ],
+			
+			"targets" : [ {
+						 "px" : 0.75,
+						 "py" : 0.65
+						 },
+						 ],
+			
+			"static" : [ {
+						"image" : "instr_intro1"
+			}
+			]
+			
+			
+		},
+		
+		"intro-2" : {
+			
+			"spawns" : [ {
+						"px" : 0.1,
+						"py" : 0.5,
+						"jx" : 0.005,
+						"jy" : 0.008,
+						"angle" : 0.0,
+						"speed" : 0.2,
+						"friction" : 1.0,
+						"frameInterval" : 3
+						}
+						],
+			
+			"controls" : [ {
+						  "type" : "push",
+						  "power" : 0.55,
+						  "angle" : 0,
+						  "canRotate" : false,
+						  "px" : 0.25,
+						  "py" : 0.5,
+						  "radius"  : 0.075,
+						  "minRadiusScale" : 1,
+						  "maxRadiusScale" : 3,
+						  "canScale" : true,
+						  "canMove" : false
+						  }
+						  
+						  
+						  ],
+			
+			"targets" : [ {
+						 "px" : 0.85,
+						 "py" : 0.5
+						 },
+						 ],
+			
+			"static" : [ {
+						"image" : "instr_intro2"
+						}
+						]
+			
+			
+		},
+		
+		"intro-3" : {
+			
+			"spawns" : [ {
+						"px" : 0.2,
+						"py" : 0.65,
+						"jx" : 0.005,
+						"jy" : 0.008,
+						"angle" : 5.497,
+						"speed" : 0.7,
+						"friction" : 0.1,
+						"frameInterval" : 3
+						}
+						],
+			
+			"controls" : [ {
+						  "type" : "push",
+						  "power" : 1.5,
+						  "angle" : 1.57,
+						  "canRotate" : false,
+						  "px" : 0.5,
+						  "py" : 0.65,
+						  "radius"  : 0.075,
+						  "minRadiusScale" : 1,
+						  "maxRadiusScale" : 3,
+						  "canScale" : true,
+						  "canMove" : true
+						  },
+						  
+						  ],
+			
+			"targets" : [ {
+						 "px" : 0.8,
+						 "py" : 0.65
+						 },
+						 ],
+			
+						
+			
+		},
+		
+		"intro-4" : {
+			
+			"spawns" : [ {
+						"px" : 0.8,
+						"py" : 0.25,
+						"jx" : 0.005,
+						"jy" : 0.008,
+						"angle" : 2.25,
+						"speed" : 0.7,
+						"friction" : 0.1,
+						"frameInterval" : 3
+						}
+						],
+			
+			"controls" : [ {
+						  "type" : "push",
+						  "power" : 1.5,
+						  "angle" : 4.712,
+						  "canRotate" : false,
+						  "px" : 0.8,
+						  "py" : 0.65,
+						  "radius"  : 0.075,
+						  "minRadiusScale" : 1,
+						  "maxRadiusScale" : 3,
+						  "canScale" : true,
+						  "canMove" : true
+						  },
+						  {
+						  "type" : "push",
+						  "power" : 1.5,
+						  "angle" : 0.0,
+						  "canRotate" : false,
+						  "px" : 0.35,
+						  "py" : 0.5,
+						  "radius"  : 0.075,
+						  "minRadiusScale" : 1,
+						  "maxRadiusScale" : 3,
+						  "canScale" : true,
+						  "canMove" : true
+						  }
+						  
+						  
+						  ],
+			
+			"targets" : [ {
+						 "px" : 0.35,
+						 "py" : 0.25
+						 },
+						 {
+						 "px" : 0.35,
+						 "py" : 0.75
+						 },
+						 ],
+			
+			"static" : [ {
+						"image" : "instr_intro4"
+						}
+						]
+			
+			
+		},
+		
+		"intro-5" : {
+			
+			"spawns" : [ {
+						"px" : 0.1,
+						"py" : 0.2,
+						"jx" : 0.005,
+						"jy" : 0.008,
+						"angle" : 0.35,
+						"speed" : 0.7,
+						"friction" : 0.02,
+						"frameInterval" : 3
+						}
+						],
+			
+			"controls" : [ {
+						  "type" : "push",
+						  "power" : 1.5,
+						  "angle" : 3.14,
+						  "canRotate" : false,
+						  "px" : 0.8,
+						  "py" : 0.35,
+						  "radius"  : 0.075,
+						  "minRadiusScale" : 1,
+						  "maxRadiusScale" : 3,
+						  "canScale" : true,
+						  "canMove" : true
+						  },
+						  {
+						  "type" : "push",
+						  "power" : 1.5,
+						  "angle" : 4.712,
+						  "canRotate" : false,
+						  "px" : 0.35,
+						  "py" : 0.55,
+						  "radius"  : 0.075,
+						  "minRadiusScale" : 1,
+						  "maxRadiusScale" : 3,
+						  "canScale" : true,
+						  "canMove" : true
+						  }
+						  
+						  
+						  ],
+			
+			"targets" : [ {
+						 "px" : 0.35,
+						 "py" : 0.15
+						 },
+						 {
+						 "px" : 0.55,
+						 "py" : 0.65
+						 },
+						 ],
+			
+		},
+		
+		"intro-6" : {
+			
+			"spawns" : [ {
+						"px" : 0.8,
+						"py" : 0.2,
+						"jx" : 0.005,
+						"jy" : 0.008,
+						"angle" : 2,
+						"speed" : 0.5,
+						"friction" : 0.5,
+						"frameInterval" : 3
+						}
+						],
+			
+			"controls" : [ {
+						  "type" : "push",
+						  "power" : 1.5,
+						  "angle" : 3.14,
+						  "canRotate" : false,
+						  "px" : 0.262,
+						  "py" : 0.231,
+						  "radius"  : 0.075,
+						  "minRadiusScale" : 1,
+						  "maxRadiusScale" : 3,
+						  "canScale" : true,
+						  "canMove" : true
+						  },
+						  {
+						  "type" : "push",
+						  "power" : 1.5,
+						  "angle" : 0,
+						  "canRotate" : false,
+						  "px" : 0.14,
+						  "py" : 0.5,
+						  "radius"  : 0.075,
+						  "minRadiusScale" : 1,
+						  "maxRadiusScale" : 3,
+						  "canScale" : true,
+						  "canMove" : true
+						  },
+						  {
+						  "type" : "push",
+						  "power" : 1.5,
+						  "angle" : 4.712,
+						  "canRotate" : false,
+						  "px" : 0.48,
+						  "py" : 0.3,
+						  "radius"  : 0.075,
+						  "minRadiusScale" : 1,
+						  "maxRadiusScale" : 3,
+						  "canScale" : true,
+						  "canMove" : true
+						  }
+						  
+						  
+						  ],
+			
+			"targets" : [ {
+						 "px" : 0.523958,
+						 "py" : 0.106250
+						 },
+						 {
+						 "px" : 0.696875,
+						 "py" : 0.371875
+						 },
+						 {
+						 "px" : 0.232292,
+						 "py" : 0.839063
+						 },
+						 ],
+			
+		},
+
+		
+		"intro-6" : {
+			
+			"spawns" : [ { "px" : 0.8, "py" : 0.2, "jx" : 0.005, "jy" : 0.008, "angle" : 2, "speed" : 0.5, "friction" : 0.5, "frameInterval" : 3 }
+						],
+			
+			"controls" : [ {
+						  "type" : "push", "power" : 1.5, "angle" : 3.14, "px" : 0.262, "py" : 0.231, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "push", "power" : 1.5, "angle" : 0, "px" : 0.14, "py" : 0.5, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "push", "power" : 1.5, "angle" : 4.712, "px" : 0.48, "py" : 0.3, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  }
+						  						  
+						  ],
+			
+			"targets" : [ { "px" : 0.523958, "py" : 0.106250 },
+						  { "px" : 0.696875, "py" : 0.371875 },
+						  { "px" : 0.232292, "py" : 0.839063 },
+						 ],
+			
+		},
+		
+		"intro-bounce-example" : {
+			
+			"spawns" : [ { "px" : 0.095833, "py" : 0.864062, "jx" : 0.003, "jy" : 0.005, "angle" : -0.5, "speed" : 0.7, "friction" : 0.2, "frameInterval" : 3 }
+						],
+			
+			"controls" : [ {
+						  "type" : "push", "power" : 1.5, "angle" : 1.57, "px" : 0.210417, "py" : 0.475000, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "push", "power" : 1.5, "angle" : 0, "px" : 0.735417, "py" : 0.812500, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "push", "power" : 1.75, "angle" : 3.1415, "px" : 0.827083, "py" : 0.498437, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  }
+						  
+						  ],
+			
+			"targets" : [ { "px" : 0.422917, "py" : 0.214062, "matchedFissure" : 0 },
+						  { "px" : 0.313542, "py" : 0.896875, "matchedFissure" : 0 },
+						  { "px" : 0.562500, "py" : 0.717187, "matchedFissure" : 0 },
+						 ],
+			
+		},
+
+		"color-first-example" : {
+			
+			"spawns" : [ { "px" : 0.873333, "py" : 0.570375, "jx" : 0.005, "jy" : 0.008, "angle" : 3.2415, "speed" : 0.5, "friction" : 0.5, "frameInterval" : 3 }
+						],
+			
+			"controls" : [ {
+						  "type" : "push", "power" : 1.5, "angle" : 0, "px" : 0.244792, "py" : 0.267187, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  }
+						  
+						  ],
+			
+			"targets" : [ { "px" : 0.700417, "py" : 0.500050, "matchedFissure" : 1 },
+						 ],
+			
+			"fissures" : [ { "px" : 0.45, "py" : 0.5, "color" : { "r" : 1, "g" : 0.4, "b" : 0.4, "a" : 1 }, "radius" : 0.025 }
+						  ]
+			
+		},
+		
+		"color-second-example" : {
+			
+			"spawns" : [ { "px" : 0.088542, "py" : 0.320312, "jx" : 0.005, "jy" : 0.008, "angle" : 0.75, "speed" : 0.75, "friction" : 0.5, "frameInterval" : 3 }
+						],
+			
+			"controls" : [ {
+						  "type" : "push", "power" : 1.5, "angle" : 1.57, "px" : 0.244792, "py" : 0.267187, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "push", "power" : 1.5, "angle" : 4.7120, "px" : 0.444792, "py" : 0.267187, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  }
+						  
+						  ],
+			
+			"targets" : [ { "px" : 0.443750, "py" : 0.512500, "matchedFissure" : 0 },
+						  { "px" : 0.807292, "py" : 0.656250, "matchedFissure" : 1 },
+						 ],
+			
+			"fissures" : [ { "px" : 0.602083, "py" : 0.323437, "color" : { "r" : 0, "g" : 0.4, "b" : 1, "a" : 1 }, "radius" : 0.025 }
+						  ]
+			
+		},
+		
+		"color-split-example" : {
+			
+			"spawns" : [ { "px" : 0.095833, "py" : 0.864062, "jx" : 0.025, "jy" : 0.028, "angle" : -0.5, "speed" : 0.5, "friction" : 0.5, "frameInterval" : 2 }
+						],
+			
+			"controls" : [ {
+						  "type" : "push", "power" : 1.5, "angle" : 1.57, "px" : 0.355208, "py" : 0.782813, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "push", "power" : 1.5, "angle" : 4.7120, "px" : 0.775000, "py" : 0.307812, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  }
+						  
+						  ],
+			
+			"targets" : [ { "px" : 0.422917, "py" : 0.214062, "matchedFissure" : 0 },
+						  { "px" : 0.746875, "py" : 0.701562, "matchedFissure" : 1 },
+						 ],
+			
+			"fissures" : [ { "px" : 0.629167, "py" : 0.443750, "color" : { "r" : 0, "g" : 0.4, "b" : 1, "a" : 1 }, "radius" : 0.025 }
+						  ]
+			
+		},
+		
+		"color-bend-reverse" : {
+			
+			"spawns" : [ { "px" : 0.183333, "py" : 0.385937, "jx" : 0.005, "jy" : 0.008, "angle" : 1, "speed" : 0.5, "friction" : 0.5, "frameInterval" : 2 }
+						],
+			
+			"controls" : [ {
+						  "type" : "push", "power" : 1.5, "angle" : 1.57, "px" : 0.156250, "py" : 0.735938, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "push", "power" : 1.5, "angle" : 4.7120, "px" : 0.353125, "py" : 0.334375, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "push", "power" : 1.5, "angle" : 0, "px" : 0.553125, "py" : 0.478125, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "push", "power" : 1.5, "angle" : 3.1415, "px" : 0.696875, "py" : 0.264063, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  }
+						  
+						  ],
+			
+			"targets" : [ { "px" : 0.448958, "py" : 0.737500, "matchedFissure" : 0 },
+						 { "px" : 0.590625, "py" : 0.742188, "matchedFissure" : 1 },
+						 { "px" : 0.126042, "py" : 0.237500, "matchedFissure" : 1 },
+						 ],
+			
+			"fissures" : [ { "px" : 0.723958, "py" : 0.671875, "color" : { "r" : 1, "g" : 0.4, "b" : 0.4, "a" : 1 }, "radius" : 0.025 }
+						  ]
+			
+		},
+		
+		"gravity-intro" : {
+			
+			"spawns" : [ { "px" : 0.146875, "py" : 0.751563, "jx" : 0.005, "jy" : 0.008, "angle" : 0, "speed" : 0.8, "friction" : 0.5, "frameInterval" : 2 }
+						],
+			
+			"controls" : [ {
+						  "type" : "gravity", "power" : 1.5, "angle" : 1.57, "px" : 0.362500, "py" : 0.439063, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  
+						  ],
+			
+			"targets" : [ { "px" : 0.600000, "py" : 0.543750, "matchedFissure" : 1 },
+						 ],
+			
+			"fissures" : [ { "px" : 0.723958, "py" : 0.671875, "color" : { "r" : 0, "g" : 0.6, "b" : 0, "a" : 1 }, "radius" : 0.025 }
+						  ]
+			
+		},
+
+		"gravity-push" : {
+			
+			"spawns" : [ { "px" : 0.260417, "py" : 0.846875, "jx" : 0.005, "jy" : 0.008, "angle" : 4, "speed" : 0.8, "friction" : 0.5, "frameInterval" : 2 }
+						],
+			
+			"controls" : [ {
+						  "type" : "gravity", "power" : 1.95, "angle" : 1.57, "px" : 0.451042, "py" : 0.310938, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "push", "power" : 1.5, "angle" : 0, "px" : 0.686458, "py" : 0.326563, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  ],
+			
+			"targets" : [ { "px" : 0.247917, "py" : 0.385937, "matchedFissure" : 1 },
+						  { "px" : 0.787500, "py" : 0.598437, "matchedFissure" : 2 },
+						 ],
+			
+			"fissures" : [ { "px" : 0.096875, "py" : 0.121875, "color" : { "r" : 0.2, "g" : 0.4, "b" : 1, "a" : 1 }, "radius" : 0.025 },
+						   { "px" : 0.454167, "py" : 0.581250, "color" : { "r" : 1, "g" : 0.4, "b" : 0, "a" : 1 }, "radius" : 0.025 }
+						  ]
+			
+		},
+		
+		"gravity-double-push" : {
+			
+			"spawns" : [ { "px" : 0.880208, "py" : 0.126562, "jx" : 0.005, "jy" : 0.008, "angle" : 3.0, "speed" : 0.5, "friction" : 0.1, "frameInterval" : 2 }
+						],
+			
+			"controls" : [ {
+						  "type" : "gravity", "power" : 1.55, "angle" : 1.57, "px" : 0.451042, "py" : 0.310938, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "gravity", "power" : 1.95, "angle" : 1.57, "px" : 0.251042, "py" : 0.310938, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "push", "power" : 1.95, "angle" : 3.1415, "px" : 0.686458, "py" : 0.326563, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  ],
+			
+			"targets" : [ { "px" : 0.587500, "py" : 0.593750, "matchedFissure" : 1 },
+						  { "px" : 0.218750, "py" : 0.542188, "matchedFissure" : 2 },
+						 ],
+			
+			"fissures" : [ { "px" : 0.425000, "py" : 0.590625, "color" : { "r" : 1, "g" : 0.2, "b" : 0.2, "a" : 1 }, "radius" : 0.025 },
+						  { "px" : 0.355208, "py" : 0.346875, "color" : { "r" : 0.2, "g" : 0.4, "b" : 1, "a" : 1 }, "radius" : 0.025 }
+						  ]
+			
+		},
+		
+		"gravity-push-hard" : {
+			
+			"spawns" : [ { "px" : 0.130208, "py" : 0.126562, "jx" : 0.005, "jy" : 0.008, "angle" : 0.5, "speed" : 0.5, "friction" : 0.2, "frameInterval" : 2 }
+						],
+			
+			"controls" : [ {
+						  "type" : "gravity", "power" : 1.95, "angle" : 1.57, "px" : 0.569792, "py" : 0.728125, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "push", "power" : 1.5, "angle" : 0, "px" : 0.562500, "py" : 0.242188, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  ],
+			
+			"targets" : [ { "px" : 0.252083, "py" : 0.221875, "matchedFissure" : 0 },
+						  { "px" : 0.359375, "py" : 0.756250, "matchedFissure" : 1 },
+						  { "px" : 0.438542, "py" : 0.384375, "matchedFissure" : 1 },
+						  { "px" : 0.317708, "py" : 0.654687, "matchedFissure" : 2 },
+						  { "px" : 0.479167, "py" : 0.668125, "matchedFissure" : 2 },
+						 ],
+			
+			"fissures" : [ { "px" : 0.385417, "py" : 0.451562, "color" : { "r" : 0.2, "g" : 0.4, "b" : 1, "a" : 1 }, "radius" : 0.025 },
+						   { "px" : 0.245833, "py" : 0.526563, "color" : { "r" : 1, "g" : 0.2, "b" : 0.2, "a" : 1 }, "radius" : 0.025 }
+						  ]
+			
+		},
+		
+		"speed-intro" : {
+			
+			"spawns" : [ { "px" : 0.130208, "py" : 0.126562, "jx" : 0.005, "jy" : 0.008, "angle" : 0.5, "speed" : 0.1, "friction" : 0.8, "frameInterval" : 2 }
+						],
+			
+			"controls" : [ {
+						  "type" : "propel", "power" : 1.95, "angle" : 1.57, "px" : 0.369792, "py" : 0.628125, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  ],
+			
+			"targets" : [ { "px" : 0.813542, "py" : 0.684375, "matchedFissure" : 0 },
+						 ],
+			
+			
+		},
+		
+		"speed-gravity" : {
+			
+			"spawns" : [ { "px" : 0.430208, "py" : 1.156562, "jx" : 0.005, "jy" : 0.008, "angle" : -1.3, "speed" : 0.7, "friction" : 0.3, "frameInterval" : 2 }
+						],
+			
+			"controls" : [ {
+						  "type" : "propel", "power" : 1.95, "angle" : 1.57, "px" : 0.369792, "py" : 0.628125, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "gravity", "power" : 1.95, "angle" : 1.57, "px" : 0.169792, "py" : 0.628125, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  ],
+			
+			"targets" : [ { "px" : 0.302083, "py" : 0.221875, "matchedFissure" : 0 },
+						  { "px" : 0.692708, "py" : 0.760938, "matchedFissure" : 1 },
+						 ],
+			
+			"fissures" : [ { "px" : 0.312500, "py" : 0.414062, "color" : { "r" : 0.2, "g" : 0.4, "b" : 1, "a" : 1 }, "radius" : 0.025 },
+						  ]
+		},
+		
+		"speed-gravity-push" : {
+			
+			"spawns" : [ { "px" : 0.750000, "py" : 0.801562, "jx" : 0.005, "jy" : 0.008, "angle" : -1.7, "speed" : 0.7, "friction" : 0.3, "frameInterval" : 2 }
+						],
+			
+			"controls" : [ {
+						  "type" : "propel", "power" : 1.95, "angle" : 1.57, "px" : 0.369792, "py" : 0.628125, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "gravity", "power" : 1.95, "angle" : 1.57, "px" : 0.237500, "py" : 0.376562, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "push", "power" : 1.95, "angle" : 1.57, "px" : 0.647917, "py" : 0.798438, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  ],
+			
+			"targets" : [ { "px" : 0.511458, "py" : 0.429688, "matchedFissure" : 0 },
+						  { "px" : 0.712500, "py" : 0.412500, "matchedFissure" : 1 },
+						  { "px" : 0.146875, "py" : 0.596875, "matchedFissure" : 1 },
+						 ],
+			
+			"fissures" : [ { "px" : 0.626042, "py" : 0.429688, "color" : { "r" : 0.2, "g" : 0.4, "b" : 1, "a" : 1 }, "radius" : 0.025 },
+						  ]
+		},
+		
+		"speed-gravity-2-push" : {
+			
+			"spawns" : [ { "px" : 0.250000, "py" : 0.501562, "jx" : 0.005, "jy" : 0.008, "angle" : 2.5, "speed" : 0.7, "friction" : 0.3, "frameInterval" : 2 }
+						],
+			
+			"controls" : [ {
+						  "type" : "propel", "power" : 1.95, "angle" : 1.57, "px" : 0.369792, "py" : 0.628125, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "gravity", "power" : 1.95, "angle" : 1.57, "px" : 0.587500, "py" : 0.234375, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "gravity", "power" : 1.95, "angle" : 1.57, "px" : 0.777083, "py" : 0.571875, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "push", "power" : 1.95, "angle" : 1.57, "px" : 0.287500, "py" : 0.185938, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  ],
+			
+			"targets" : [ { "px" : 0.146875, "py" : 0.354687, "matchedFissure" : 0 },
+						 { "px" : 0.391667, "py" : 0.407813, "matchedFissure" : 0 },
+						 { "px" : 0.771875, "py" : 0.178125, "matchedFissure" : 1 },
+						 { "px" : 0.671875, "py" : 0.817187, "matchedFissure" : 1 },
+						 ],
+			
+			"fissures" : [ { "px" : 0.604167, "py" : 0.504687, "color" : { "r" : 1.0, "g" : 0.2, "b" : 0.6, "a" : 1 }, "radius" : 0.025 },
+						  ]
+		},
+
+		"speed-gravity-push-2" : {
+			
+			"spawns" : [ { "px" : 0.20000, "py" : -0.06562, "jx" : 0.005, "jy" : 0.008, "angle" : 1, "speed" : 0.5, "friction" : 0.5, "frameInterval" : 2 }
+						],
+			
+			"controls" : [ {
+						  "type" : "propel", "power" : 2.95, "angle" : 1.57, "px" : 0.169792, "py" : 0.328125, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "gravity", "power" : 1.95, "angle" : 1.57, "px" : 0.587500, "py" : 0.234375, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "push", "power" : 1.95, "angle" : 3.1415, "px" : 0.777083, "py" : 0.571875, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "push", "power" : 1.95, "angle" : 1.57, "px" : 0.223958, "py" : 0.579688, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  ],
+			
+			"targets" : [ { "px" : 0.367708, "py" : 0.704688, "matchedFissure" : 0 },
+						 { "px" : 0.141667, "py" : 0.845313, "matchedFissure" : 1 },
+
+						 ],
+			
+			"fissures" : [ { "px" : 0.470833, "py" : 0.329687, "color" : { "r" : 1.0, "g" : 0.2, "b" : 0.6, "a" : 1 }, "radius" : 0.025 },
+						  ]
+		},
+		
+		"repel-intro" : {
+			
+			"spawns" : [ { "px" : 0.80000, "py" : 0.50562, "jx" : 0.005, "jy" : 0.008, "angle" : 3.1415, "speed" : 0.7, "friction" : 0.5, "frameInterval" : 2 }
+						],
+			
+			"controls" : [ {
+						  "type" : "repel", "power" : 1.5, "angle" : 0, "px" : 0.169792, "py" : 0.328125, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  ],
+			
+			"targets" : [ { "px" : 0.367708, "py" : 0.704688, "matchedFissure" : 0 },
+						 
+						 ],
+			
+		},
+		
+		"repel-warp-intro" : {
+			
+			"spawns" : [ { "px" : 0.90000, "py" : 0.50062, "jx" : 0.005, "jy" : 0.008, "angle" : 3.1415, "speed" : 0.7, "friction" : 0.5, "frameInterval" : 2 }
+						],
+			
+			"controls" : [ {
+						  "type" : "repel", "power" : 1.5, "angle" : 0, "px" : 0.169792, "py" : 0.328125, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "push", "power" : 1.5, "angle" : 4.712, "px" : 0.569792, "py" : 0.328125, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "warp", "power" : 1.5, "angle" : 0, "px" : 0.339792, "py" : 0.500125, "radius"  : 0.02,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : false, "canMove" : false, "canRotate" : false,
+						  },
+						  {
+						  "type" : "warp", "power" : 1.5, "angle" : 0, "px" : 0.669792, "py" : 0.500125, "radius"  : 0.02,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : false, "canMove" : false, "canRotate" : false,
+						  },
+						  ],
+			
+			"targets" : [ { "px" : 0.506458, "py" : 0.504375, "matchedFissure" : 0 },
+						 
+						 ],
+			
+		},
+		
+		
+		"warp-cross" : {
+			
+			"spawns" : [ { "px" : 0.90000, "py" : 0.50062, "jx" : 0.005, "jy" : 0.008, "angle" : 2.1415, "speed" : 0.7, "friction" : 0.5, "frameInterval" : 2 }
+						],
+			
+			"controls" : [ {
+						  "type" : "push", "power" : 1.5, "angle" : 0, "px" : 0.509792, "py" : 0.508125, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "push", "power" : 1.5, "angle" : 4.712, "px" : 0.192708, "py" : 0.767188, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "warp", "power" : 1.5, "angle" : 0, "px" : 0.339792, "py" : 0.3500125, "radius"  : 0.02,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "warp", "power" : 1.5, "angle" : 0, "px" : 0.669792, "py" : 0.3500125, "radius"  : 0.02,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "warp", "power" : 1.5, "angle" : 0, "px" : 0.339792, "py" : 0.650125, "radius"  : 0.02,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : false, "canMove" : false, "canRotate" : false,
+						  },
+						  {
+						  "type" : "warp", "power" : 1.5, "angle" : 0, "px" : 0.669792, "py" : 0.650125, "radius"  : 0.02,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : false, "canMove" : false, "canRotate" : false,
+						  },
+						  ],
+			
+			"targets" : [ { "px" : 0.8506458, "py" : 0.1504375, "matchedFissure" : 0 },
+						  { "px" : 0.291667, "py" : 0.493750, "matchedFissure" : 0 },
+						 
+						 ],
+			
+		},
+		
+		"warp-cross-2" : {
+			
+			"spawns" : [ { "px" : 0.10000, "py" : 0.30062, "jx" : 0.005, "jy" : 0.008, "angle" : 0, "speed" : 0.7, "friction" : 0.5, "frameInterval" : 2 }
+						],
+			
+			"controls" : [ {
+						  "type" : "push", "power" : 1.5, "angle" : 4.712, "px" : 0.192708, "py" : 0.767188, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "push", "power" : 1.5, "angle" : 1.57, "px" : 0.292708, "py" : 0.767188, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "warp", "power" : 1.5, "angle" : 0, "px" : 0.339792, "py" : 0.4500125, "radius"  : 0.02,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : false, "canMove" : false, "canRotate" : false,
+						  },
+						  {
+						  "type" : "warp", "power" : 1.5, "angle" : 0, "px" : 0.669792, "py" : 0.4500125, "radius"  : 0.02,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : false, "canMove" : false, "canRotate" : false,
+						  },
+						  ],
+			
+			"targets" : [ { "px" : 0.409375, "py" : 0.389063, "matchedFissure" : 0 },
+						  { "px" : 0.428125, "py" : 0.570312, "matchedFissure" : 0 },
+						  { "px" : 0.637500, "py" : 0.818750, "matchedFissure" : 0 },
+						 
+						 ],
+			
+		},
+		
+		"shape-intro" : {
+			
+			"spawns" : [ { "px" : 0.50000, "py" : -0.10062, "jx" : 0.005, "jy" : 0.008, "angle" : 2, "speed" : 0.7, "friction" : 0.5, "frameInterval" : 2 }
+						],
+			
+			"controls" : [ {
+						  "type" : "push", "power" : 1.5, "angle" : 0, "px" : 0.192708, "py" : 0.767188, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "shape", "power" : 1.5, "angle" : 1.57, "px" : 0.614583, "py" : 0.742188, "radius"  : 0.075,
+						  "points" : [ { "angle" : 0, "radius" : 1 }, { "angle" : 1.57, "radius" : 1 }, { "angle" : 3.1415, "radius" : 1 }, { "angle" : 4.712, "radius" : 1 } ],
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : false, "canMove" : false, "canRotate" : false,
+						  },
+						  ],
+			
+			"targets" : [ { "px" : 0.747917, "py" : 0.145312, "matchedFissure" : 0 },
+						 
+						 
+						 ],
+			
+		},
+		
+		"shape-warp" : {
+			
+			"spawns" : [ { "px" : 0.150000, "py" : 0.30062, "jx" : 0.005, "jy" : 0.008, "angle" : 1, "speed" : 0.7, "friction" : 0.5, "frameInterval" : 2 }
+						],
+			
+			"controls" : [ {
+						  "type" : "gravity", "power" : 1.5, "angle" : 0, "px" : 0.192708, "py" : 0.767188, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "gravity", "power" : 1.5, "angle" : 0, "px" : 0.677083, "py" : 0.839063, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "propel", "power" : 2.5, "angle" : 0, "px" : 0.848958, "py" : 0.371875, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "shape", "power" : 1.5, "angle" : 1.57, "px" : 0.500583, "py" : 0.500188, "radius"  : 0.2,
+						  "points" : [ { "angle" : 0.10, "radius" : 1 }, { "angle" : 3.041, "radius" : 1 }, { "angle" : 3.241, "radius" : 1 }, { "angle" : -0.10, "radius" : 1 } ],
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : false, "canMove" : false, "canRotate" : false,
+						  },
+						  {
+						  "type" : "warp", "power" : 1.5, "angle" : 0, "px" : 0.877083, "py" : 0.732812, "radius"  : 0.02,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : false, "canMove" : false, "canRotate" : false,
+						  },
+						  {
+						  "type" : "warp", "power" : 1.5, "angle" : 0, "px" : 0.319792, "py" : 0.312500, "radius"  : 0.02,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : false, "canMove" : false, "canRotate" : false,
+						  },
+						  ],
+			
+			"targets" : [ { "px" : 0.669792, "py" : 0.393750, "matchedFissure" : 0 },
+						  { "px" : 0.414583, "py" : 0.423438, "matchedFissure" : 1 }
+						 
+						 
+						 ],
+			
+			"fissures" : [ { "px" : 0.683333, "py" : 0.593750, "color" : { "r" : 1.0, "g" : 0.2, "b" : 0.2, "a" : 1 }, "radius" : 0.025 },
+						  ]
+			
+		},
+		
+		"shape-warp-2" : {
+			
+			"spawns" : [ { "px" : 0.750000, "py" : 0.20062, "jx" : 0.005, "jy" : 0.008, "angle" : 3.1415, "speed" : 0.7, "friction" : 0.5, "frameInterval" : 2 }
+						],
+			
+			"controls" : [ {
+						  "type" : "gravity", "power" : 1.5, "angle" : 0, "px" : 0.677083, "py" : 0.414062, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "gravity", "power" : 1.5, "angle" : 0, "px" : 0.814583, "py" : 0.825000, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "push", "power" : 1.5, "angle" : 0, "px" : 0.294792, "py" : 0.704688, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "propel", "power" : 1.5, "angle" : 0, "px" : 0.215625, "py" : 0.395313, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "shape", "power" : 1.5, "angle" : 0.79, "px" : 0.500583, "py" : 0.500188, "radius"  : 0.2,
+						  "points" : [ { "angle" : 0.10, "radius" : 1 }, { "angle" : 3.041, "radius" : 1 }, { "angle" : 3.241, "radius" : 1 }, { "angle" : -0.10, "radius" : 1 } ],
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : false, "canMove" : false, "canRotate" : false,
+						  },
+						  {
+						  "type" : "warp", "power" : 1.5, "angle" : 0, "px" : 0.150000, "py" : 0.868750, "radius"  : 0.02,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : false, "canMove" : false, "canRotate" : false,
+						  },
+						  {
+						  "type" : "warp", "power" : 1.5, "angle" : 0, "px" : 0.725000, "py" : 0.606250, "radius"  : 0.02,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : false, "canMove" : false, "canRotate" : false,
+						  },
+						  ],
+			
+			"targets" : [ { "px" : 0.464583, "py" : 0.653125, "matchedFissure" : 0 },
+						 { "px" : 0.128125, "py" : 0.746875, "matchedFissure" : 1 }
+						 
+						 
+						 ],
+			
+			"fissures" : [ { "px" : 0.457292, "py" : 0.821875, "color" : { "r" : 1.0, "g" : 0.2, "b" : 0.2, "a" : 1 }, "radius" : 0.025 },
+						  ]
+			
+		},
+		
+		"double-spawn-intro" : {
+			
+			"spawns" : [ { "px" : 0.150000, "py" : 0.15062, "jx" : 0.005, "jy" : 0.008, "angle" : 0, "speed" : 0.7, "friction" : 0.5, "frameInterval" : 4 },
+						 { "px" : 0.850000, "py" : 0.85062, "jx" : 0.005, "jy" : 0.008, "angle" : 3.1415, "speed" : 0.7, "friction" : 0.5, "frameInterval" : 4 }
+						],
+			
+			"controls" : [
+						  {
+						  "type" : "push", "power" : 1.5, "angle" : 0, "px" : 0.294792, "py" : 0.704688, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "push", "power" : 1.5, "angle" : 1.57, "px" : 0.215625, "py" : 0.395313, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "push", "power" : 1.5, "angle" : 4.712, "px" : 0.582292, "py" : 0.332813, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  
+						  
+						  ],
+			
+			"targets" : [ { "px" : 0.740625, "py" : 0.493750, "matchedFissure" : 0 },
+						 { "px" : 0.627083, "py" : 0.617188, "matchedFissure" : 1 }
+						 
+						 
+						 ],
+			
+			"fissures" : [ { "px" : 0.416667, "py" : 0.503125, "color" : { "r" : 0.2, "g" : 0.2, "b" : 1, "a" : 1 }, "radius" : 0.025 },
+						  ]
+			
+		},
+		
+		"double-spawn-2" : {
+			
+			"spawns" : [ { "px" : 0.150000, "py" : 0.15062, "jx" : 0.005, "jy" : 0.008, "angle" : 0, "speed" : 0.7, "friction" : 0.5, "frameInterval" : 4 },
+						{ "px" : 0.850000, "py" : 0.85062, "jx" : 0.005, "jy" : 0.008, "angle" : 3.1415, "speed" : 0.7, "friction" : 0.5, "frameInterval" : 4 }
+						],
+			
+			"controls" : [
+						  {
+						  "type" : "gravity", "power" : 1.5, "angle" : 0, "px" : 0.793750, "py" : 0.654688, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "gravity", "power" : 1.5, "angle" : 1.57, "px" : 0.793750, "py" : 0.325313, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "repel", "power" : 1.5, "angle" : 4.712, "px" : 0.145833, "py" : 0.415625, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  
+						  
+						  ],
+			
+			"targets" : [ { "px" : 0.440625, "py" : 0.704688, "matchedFissure" : 2 },
+						 { "px" : 0.573958, "py" : 0.409375, "matchedFissure" : 1 }
+						 
+						 
+						 ],
+			
+			"fissures" : [ { "px" : 0.303125, "py" : 0.625000, "color" : { "r" : 0.2, "g" : 0.2, "b" : 1, "a" : 1 }, "radius" : 0.025 },
+						  { "px" : 0.350000, "py" : 0.292187, "color" : { "r" : 1, "g" : 0.2, "b" : 0.2, "a" : 1 }, "radius" : 0.025 },
+						  ]
+			
+		},
+
+		"shape-warp-3" : {
+			
+			"spawns" : [ { "px" : 0.750000, "py" : 0.20062, "jx" : 0.005, "jy" : 0.008, "angle" : 3.1415, "speed" : 0.7, "friction" : 0.5, "frameInterval" : 3 }
+						],
+			
+			"controls" : [ {
+						  "type" : "push", "power" : 1.5, "angle" : 0, "px" : 0.677083, "py" : 0.414062, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "gravity", "power" : 1.5, "angle" : 0, "px" : 0.814583, "py" : 0.825000, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "push", "power" : 2.5, "angle" : 3.1415, "px" : 0.444792, "py" : 0.395313, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "propel", "power" : 2.5, "angle" : 0, "px" : 0.215625, "py" : 0.395313, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "shape", "power" : 1.5, "angle" : 0, "px" : 0.500583, "py" : 0.750188, "radius"  : 0.2,
+						  "points" : [ { "angle" : 0.10, "radius" : 1 }, { "angle" : 3.041, "radius" : 1 }, { "angle" : 3.241, "radius" : 1 }, { "angle" : -0.10, "radius" : 1 } ],
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : false, "canMove" : false, "canRotate" : false,
+						  },
+						  {
+						  "type" : "warp", "power" : 1.5, "angle" : 0, "px" : 0.159375, "py" : 0.565625, "radius"  : 0.02,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : false, "canMove" : false, "canRotate" : false,
+						  },
+						  {
+						  "type" : "warp", "power" : 1.5, "angle" : 0, "px" : 0.787500, "py" : 0.471875, "radius"  : 0.02,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : false, "canMove" : false, "canRotate" : false,
+						  },
+						  ],
+			
+			"targets" : [
+						  { "px" : 0.398958, "py" : 0.343750, "matchedFissure" : 1 },
+						  { "px" : 0.575000, "py" : 0.451562, "matchedFissure" : 2 }
+						 
+						 
+						 ],
+			
+			"fissures" : [ { "px" : 0.234375, "py" : 0.331250, "color" : { "r" : 1.0, "g" : 0.2, "b" : 0.2, "a" : 1 }, "radius" : 0.025 },
+						   { "px" : 0.303125, "py" : 0.503125, "color" : { "r" : 0.2, "g" : 0.2, "b" : 1, "a" : 1 }, "radius" : 0.025 },
+						  ]
+			
+		},
+
+		"journey-1" : {
+			
+			"spawns" : [ { "px" : 0.150000, "py" : 0.20062, "jx" : 0.005, "jy" : 0.008, "angle" : 1.57, "speed" : 0.7, "friction" : 0.5, "frameInterval" : 2 }
+						],
+			
+			"controls" : [ {
+						  "type" : "push", "power" : 1.5, "angle" : 0, "px" : 0.762500, "py" : 0.556250, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "gravity", "power" : 2.0, "angle" : 0, "px" : 0.814583, "py" : 0.825000, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "push", "power" : 2.5, "angle" : 3.1415, "px" : 0.444792, "py" : 0.395313, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "propel", "power" : 2.5, "angle" : 0, "px" : 0.369792, "py" : 0.726562, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "gravity", "power" : 2.0, "angle" : 0, "px" : 0.275000, "py" : 0.200000, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  ],
+			
+			"targets" : [
+						 { "px" : 0.607292, "py" : 0.521875, "matchedFissure" : 0 },
+						 { "px" : 0.490625, "py" : 0.601562, "matchedFissure" : 1 },
+						 { "px" : 0.204167, "py" : 0.745313, "matchedFissure" : 1 },
+						 { "px" : 0.640625, "py" : 0.106250, "matchedFissure" : 2 }
+						 
+						 
+						 ],
+			
+			"fissures" : [ { "px" : 0.559375, "py" : 0.251562, "color" : { "r" : 1.0, "g" : 0.2, "b" : 0.2, "a" : 1 }, "radius" : 0.025 },
+						   { "px" : 0.806250, "py" : 0.325000, "color" : { "r" : 0.2, "g" : 0.2, "b" : 1.0, "a" : 1 }, "radius" : 0.025 },
+						  ]
+			
+		},
+		
+		"warp-trick-1" : {
+			
+			"spawns" : [ { "px" : 0.850000, "py" : 0.820062, "jx" : 0.005, "jy" : 0.008, "angle" : 4, "speed" : 0.5, "friction" : 0.2, "frameInterval" : 2 }
+						],
+			
+			"controls" : [ 						  {
+						  "type" : "warp", "power" : 1.5, "angle" : 4.712, "px" : 0.721875, "py" : 0.582812, "radius"  : 0.02,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : false, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "warp", "power" : 1.5, "angle" : 3.1415, "px" : 0.381250, "py" : 0.581250, "radius"  : 0.02,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : false, "canMove" : true, "canRotate" : false,
+						  },
+						  ],
+			
+			"targets" : [
+						 { "px" : 0.379167, "py" : 0.362500, "matchedFissure" : 0 },
+						 						 
+						 
+						 ],
+			
+			"fissures" : [
+						  ]
+			
+		},
+		
+		"warp-cross-3" : {
+			
+			"spawns" : [ { "px" : 0.150000, "py" : 0.820062, "jx" : 0.000, "jy" : 0.000, "angle" : 0, "speed" : 0.5, "friction" : 0.2, "frameInterval" : 2 }
+						],
+			
+			"controls" : [
+						  
+						  {
+						  "type" : "gravity", "power" : 2.0, "angle" : 0, "px" : 0.762500, "py" : 0.556250, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "propel", "power" : 2.5, "angle" : 0, "px" : 0.215625, "py" : 0.395313, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "warp", "power" : 1.5, "angle" : 4.712, "px" : 0.721875, "py" : 0.582812, "radius"  : 0.02,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : false, "canMove" : false, "canRotate" : false,
+						  },
+						  {
+						  "type" : "warp", "power" : 1.5, "angle" : 3.1415, "px" : 0.202083, "py" : 0.664062, "radius"  : 0.02,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : false, "canMove" : false, "canRotate" : false,
+						  },
+						  {
+						  "type" : "warp", "power" : 1.5, "angle" : 4.712, "px" : 0.619792, "py" : 0.162500, "radius"  : 0.02,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : false, "canMove" : false, "canRotate" : false,
+						  },
+						  {
+						  "type" : "warp", "power" : 1.5, "angle" : 3.1415, "px" : 0.102083, "py" : 0.353125, "radius"  : 0.02,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : false, "canMove" : false, "canRotate" : false,
+						  },
+						  ],
+			
+			"targets" : [
+						 { "px" : 0.330208, "py" : 0.525000, "matchedFissure" : 1 },
+						 { "px" : 0.736458, "py" : 0.446875, "matchedFissure" : 2 },
+						 
+						 
+						 ],
+			
+			"fissures" : [ { "px" : 0.525000, "py" : 0.728125, "color" : { "r" : 1.0, "g" : 0.2, "b" : 0.2, "a" : 1 }, "radius" : 0.025 },
+						  { "px" : 0.379167, "py" : 0.714063, "color" : { "r" : 0.2, "g" : 0.2, "b" : 1.0, "a" : 1 }, "radius" : 0.025 },
+			]
+			
+		},
+
+		"shape-journey-1" : {
+			
+			"spawns" : [ { "px" : 0.750000, "py" : 0.20062, "jx" : 0.005, "jy" : 0.008, "angle" : 3.1415, "speed" : 0.7, "friction" : 0.5, "frameInterval" : 2 }
+						],
+			
+			"controls" : [ {
+						  "type" : "gravity", "power" : 1.5, "angle" : 0, "px" : 0.593750, "py" : 0.664062, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "gravity", "power" : 1.5, "angle" : 0, "px" : 0.893750, "py" : 0.542188, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "push", "power" : 1.5, "angle" : 1.57, "px" : 0.359375, "py" : 0.671875, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "propel", "power" : 1.5, "angle" : 0, "px" : 0.472917, "py" : 0.843750, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "shape", "power" : 1.5, "angle" : 3.1415, "px" : 0.500583, "py" : 0.500188, "radius"  : 0.2,
+						  "points" : [ { "angle" : 0.10, "radius" : 1 }, { "angle" : 3.041, "radius" : 1 }, { "angle" : 3.241, "radius" : 1 }, { "angle" : -0.10, "radius" : 1 } ],
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : false, "canMove" : false, "canRotate" : false,
+						  },
+						  {
+						  "type" : "shape", "power" : 1.5, "angle" : 1.57, "px" : 0.2500583, "py" : 0.7500188, "radius"  : 0.1,
+						  "points" : [ { "angle" : 0.10, "radius" : 1 }, { "angle" : 3.041, "radius" : 1 }, { "angle" : 3.241, "radius" : 1 }, { "angle" : -0.10, "radius" : 1 } ],
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : false, "canMove" : false, "canRotate" : false,
+						  },
+						  {
+						  "type" : "warp", "power" : 1.5, "angle" : 0, "px" : 0.150000, "py" : 0.868750, "radius"  : 0.02,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : false, "canMove" : false, "canRotate" : false,
+						  },
+						  {
+						  "type" : "warp", "power" : 1.5, "angle" : 0, "px" : 0.725000, "py" : 0.606250, "radius"  : 0.02,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : false, "canMove" : false, "canRotate" : false,
+						  },
+						  ],
+			
+			"targets" : [ { "px" : 0.159375, "py" : 0.715625, "matchedFissure" : 1 },
+						  { "px" : 0.914583, "py" : 0.342188, "matchedFissure" : 1 },
+						  { "px" : 0.829167, "py" : 0.748437, "matchedFissure" : 2 },
+						  { "px" : 0.840625, "py" : 0.225000, "matchedFissure" : 2 }
+						 
+						 
+						 ],
+			
+			"fissures" : [ { "px" : 0.169792, "py" : 0.445312, "color" : { "r" : 1.0, "g" : 0.2, "b" : 0.2, "a" : 1 }, "radius" : 0.025 },
+						   { "px" : 0.775000, "py" : 0.431250, "color" : { "r" : 0.2, "g" : 0.2, "b" : 1.0, "a" : 1 }, "radius" : 0.025 },
+						  ]
+			
+		},
+		
+		"speed-test" : {
+			
+			"spawns" : [ { "px" : 0.750000, "py" : 0.20062, "jx" : 0.000, "jy" : 0.000, "angle" : 3.1415, "speed" : 0.7, "friction" : 0.5, "frameInterval" : 2 }
+						],
+			
+			"controls" : [ {
+						  "type" : "propel", "power" : 1.5, "angle" : 0, "px" : 0.593750, "py" : 0.664062, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "gravity", "power" : 1.5, "angle" : 0, "px" : 0.403125, "py" : 0.595313, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  ],
+			
+			"targets" : [ { "px" : 0.252083, "py" : 0.603125, "matchedFissure" : 0 },
+						 { "px" : 0.464583, "py" : 0.343750, "matchedFissure" : 0 },
+						 { "px" : 0.265625, "py" : 0.756250, "matchedFissure" : 0 },
+						 { "px" : 0.302083, "py" : 0.371875, "matchedFissure" : 0 },
+						 
+						 
+						 ],
+			
+			"fissures" : [
+						  ]
+			
+		},
+		
+		"warp-nonsense" : {
+			
+			"spawns" : [ { "px" : 0.750000, "py" : 0.20062, "jx" : 0.000, "jy" : 0.000, "angle" : 3.1415, "speed" : 0.5, "friction" : 0.5, "frameInterval" : 2 }
+						],
+			
+			"controls" : [
+						  {
+						  "type" : "push", "power" : 1.5, "angle" : 1.57, "px" : 0.507292, "py" : 0.846875, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "propel", "power" : 1.5, "angle" : 1.57, "px" : 0.572917, "py" : 0.612500, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "push", "power" : 1.5, "angle" : 3.1415, "px" : 0.257292, "py" : 0.376562, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "gravity", "power" : 1.5, "angle" : 0, "px" : 0.839583, "py" : 0.371875, "radius"  : 0.075,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : true, "canMove" : true, "canRotate" : false,
+						  },
+						  {
+						  "type" : "warp", "power" : 1.5, "angle" : 0, "px" : 0.336458, "py" : 0.717187, "radius"  : 0.02,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : false, "canMove" : false, "canRotate" : false,
+						  },
+						  {
+						  "type" : "warp", "power" : 1.5, "angle" : 0, "px" : 0.696875, "py" : 0.506250, "radius"  : 0.02,
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : false, "canMove" : false, "canRotate" : false,
+						  },
+						  {
+						  "type" : "shape", "power" : 1.5, "angle" : 1.57, "px" : 0.4500583, "py" : 0.4500188, "radius"  : 0.1,
+						  "points" : [ { "angle" : 0.0, "radius" : 1 }, { "angle" : 2.1415, "radius" : 1 }, { "angle" : 4.1415, "radius" : 1 }, { "angle" : -0.10, "radius" : 1 } ],
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : false, "canMove" : false, "canRotate" : false,
+						  },
+						  {
+						  "type" : "shape", "power" : 1.5, "angle" : 1.57, "px" : 0.7500583, "py" : 0.7500188, "radius"  : 0.1,
+						  "points" : [ { "angle" : 0.0, "radius" : 1 }, { "angle" : 2.1415, "radius" : 1 }, { "angle" : 4.1415, "radius" : 1 }, { "angle" : -0.10, "radius" : 1 } ],
+						  "minRadiusScale" : 1, "maxRadiusScale" : 3, "canScale" : false, "canMove" : false, "canRotate" : false,
+						  },
+						  ],
+			
+			"targets" : [ { "px" : 0.252083, "py" : 0.603125, "matchedFissure" : 0 },
+						 { "px" : 0.370833, "py" : 0.825000, "matchedFissure" : 0 },
+						 { "px" : 0.257292, "py" : 0.793750, "matchedFissure" : 1 },
+						 { "px" : 0.735417, "py" : 0.598437, "matchedFissure" : 1 },
+						 
+						 
+						 ],
+			
+			"fissures" : [ { "px" : 0.617708, "py" : 0.296875, "color" : { "r" : 1.0, "g" : 0.2, "b" : 0.2, "a" : 1 }, "radius" : 0.025 },
+			]
+			
+		},
+
+		
+	}
+	
+	
+}
